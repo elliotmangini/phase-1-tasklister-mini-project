@@ -11,15 +11,22 @@
 
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
+      <select>
+        <option value="high">High Priority</option>
+        <option value="low">Low Priority</option>
+      </select>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <input type="text" id="emoji" name="emoji" placeholder='emoji'>
       <input type="submit" value="Create New Task">
     </form>
 
     <div id="list">
-      <h2>My Todos:</h2>
+      <h2>My To-dos:</h2>
       <ul id="tasks">
       </ul>
     </div>
+
+    <h1 id='darkModeButton'>Dark Mode</h1>
 
     <script src="./src/index.js"></script>
   </div>
